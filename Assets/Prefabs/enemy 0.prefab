@@ -10,7 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 52230371668156946}
   - component: {fileID: 8226851307286642050}
-  m_Layer: 0
+  - component: {fileID: 3995946016744634893}
+  - component: {fileID: -3724225110697243440}
+  - component: {fileID: -8235711254575536781}
+  - component: {fileID: -2778387447906881137}
+  - component: {fileID: 2641629415443851955}
+  m_Layer: 6
   m_Name: enemy 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,6 +50,87 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29647fa8ec38347e7b2338846255c85a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &3995946016744634893
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6464872154536797753}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &-3724225110697243440
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6464872154536797753}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0018036366, y: -0.058619708}
+  serializedVersion: 2
+  m_Radius: 0.3818586
+--- !u!114 &-8235711254575536781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6464872154536797753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a351d376d65460796964a0c5fd4ff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 25
+--- !u!114 &-2778387447906881137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6464872154536797753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59faf01bec2a34ee1b0276a301038885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
+--- !u!114 &2641629415443851955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6464872154536797753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c335fd2f32f6746c09dbfed183dbf6f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7977156640688564245, guid: 8030c60f91a1444afad854a0375545dd, type: 3}
+  projectileSpeed: 10
+  projectileLifeTime: 5
+  firingRate: 1
+  useAI: 1
+  isFiring: 0
 --- !u!1 &7648085530820611351
 GameObject:
   m_ObjectHideFlags: 0
@@ -55,7 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1212209184811554094}
   - component: {fileID: 5715172356633842866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: enemyRed5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,14 +155,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7648085530820611351}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 52230371668156946}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &5715172356633842866
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -117,7 +203,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 2d2a6ef65b13e4ce0ae0fa1876460ddf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
