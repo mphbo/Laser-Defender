@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 8e13c7e3503cc450582bb7e0926f2064
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - NEON LED Light
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 08bcd88986cd14181a1da3dadaeacfb7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
