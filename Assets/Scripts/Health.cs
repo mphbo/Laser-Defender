@@ -12,11 +12,13 @@ public class Health : MonoBehaviour
     [SerializeField] bool applyCameraShake;
     CameraShake cameraShake;
     ScoreKeeper scoreKeeper;
+    LevelManager levelManager;
 
     void Awake() 
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        levelManager = FindObjectOfType<LevelManager>();
     }
     
     void OnTriggerEnter2D(Collider2D other) 
@@ -46,6 +48,10 @@ public class Health : MonoBehaviour
         if (!isPlayer)
         {
             scoreKeeper.UpdateScore(score);
+        }
+        else
+        {
+            levelManager.LoadGameOver();
         }
         Destroy(gameObject);
     }
