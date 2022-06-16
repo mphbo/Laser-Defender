@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField] float paddingRight;
     [SerializeField] float paddingTop;
     [SerializeField] float paddingBottom;
+    bool hasFired;
     Vector2 minBounds;
     Vector2 maxBounds;
 
@@ -53,9 +54,24 @@ public class Player : MonoBehaviour
 
     void OnFire(InputValue value)
     {
+        StartCoroutine(FireSlowly(value));
+    }
+    IEnumerator FireSlowly(InputValue value)
+    {
+        while (true)
+        {
         if (shooter != null)        
         {
+            Debug.Log(value.isPressed);
             shooter.isFiring = value.isPressed;
+            // shooter.isFiring = false;
+            // shooter.isFiring = hasFired;
+        }
+            // if (shooter.isFiring || !hasFired) 
+            // {
+            //     shooter.isFiring = false;
+            // }
+            yield return new WaitForSeconds(1f);
         }
     }
 }

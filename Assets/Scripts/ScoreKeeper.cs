@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour
 {
-    int score;
+    int score = 0;
 
     public int GetScore()
     {

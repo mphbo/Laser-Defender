@@ -8,7 +8,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float projectileLifeTime = 5f;
-    [SerializeField] float baseFiringRate = 0.2f;
+    [SerializeField] float baseFiringRate = 2f;
 
     [Header("AI")]
     [SerializeField] bool useAI;
