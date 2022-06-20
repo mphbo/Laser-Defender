@@ -12,15 +12,15 @@ This game was built with Unity/C#
 
 ### Main Menu screen
 
-!["Screenshot of URLs page"](https://github.com/mphbo/Laser-Defender/blob/master/docs/1.png?raw=true)
+!["Screenshot of URLs page"](https://github.com/mphbo/Laser-Defender/blob/master/docs/3.png?raw=true)
 
 ### Picture of game play
 
-!["Screenshot of URLs page"](https://github.com/msarauer/better-place/blob/master/docs/2.png?raw=true)
+!["Screenshot of URLs page"](https://github.com/mphbo/Laser-Defender/blob/master/docs/1.png?raw=true)
 
 ### Game over screen
 
-!["Screenshot of URLs page"](https://github.com/msarauer/better-place/blob/master/docs/3.png?raw=true)
+!["Screenshot of URLs page"](https://github.com/mphbo/Laser-Defender/blob/master/docs/2.png?raw=true)
 
 ## Setup
 
